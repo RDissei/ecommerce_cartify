@@ -1,0 +1,124 @@
+/* Success page container with centered content */
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f8ff;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  animation: fadeIn 1s forwards, scaleIn 1s forwards;
+  position: relative;
+}
+
+/* Keyframe animation for fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Keyframe animation for scaling effect */
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Styling for the success message */
+.success-container h2 {
+  color: #28a745;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Keyframe animation for fading and sliding up the title */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling for the order details */
+.success-container p {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 10px 0;
+  animation: fadeInUp 1s 0.5s ease-in-out forwards;
+}
+
+/* Styling for the strong text (order ID and amount) */
+.success-container strong {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Right side symbol (checkmark icon) */
+.right-symbol {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3rem;
+  color: #28a745;
+  animation: popBurst 1s ease-in-out forwards;
+}
+
+/* Pop Burst Animation */
+@keyframes popBurst {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Styling for the button */
+.success-container button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  animation: fadeInUp 1s 1s ease-in-out forwards;
+}
+
+/* Hover effect on the button */
+.success-container button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Active state of the button */
+.success-container button:active {
+  background-color: #003d82;
+  transform: scale(0.98);
+}

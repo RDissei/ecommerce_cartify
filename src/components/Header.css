@@ -1,0 +1,95 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color:#332F2C; /* Dark Amazon-like background */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0 20px; /* Add space around the content */
+}
+
+.header__logo {
+  width: 135px;
+  object-fit: contain;
+  margin: 0 20px;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 30px; /* Round the edges more */
+  background-color: white; /* White background to make search box stand out */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__searchInput {
+  height: 20px; /* Increased height for a better look */
+  padding: 10px;
+  border: none;
+  flex: 1; /* This will make the input take available space */
+  font-size: 16px; /* Better font size */
+  border-radius: 30px; /* Round the input */
+  outline: none; /* Removes default outline */
+}
+
+.header__searchIcon {
+  padding: 10px;
+  height: 40px; /* Match the input height */
+  background-color: #ff9900; /* Amazon-like orange color */
+  border-radius: 30px; /* Match rounded edges */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.header__searchIcon svg {
+  fill: white; /* Ensure icon color is white */
+}
+
+.header__optionLineOne {
+  font-size: 12px; /* Improved font size */
+  color: #fff; /* Make the text color white */
+}
+
+.header__optionLineTwo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff; /* White text */
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: white; /* Ensure the count text is white */
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.header__option:hover {
+  opacity: 0.7; /* Slight hover effect */
+}
