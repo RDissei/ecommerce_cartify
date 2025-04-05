@@ -3,10 +3,10 @@ import imageUrlBuilder from '@sanity/image-url';
 
 // Configure Sanity Client
 export const client = createClient({
-  projectId: 'jru6499t', // Replace with your actual Sanity Project ID
+  projectId:process.env.REACT_PUBLIC_SANITY_ID,
   dataset: 'production',
-  useCdn: true,
   apiVersion: '2022-03-07',
+  useCdn: true,
   token:process.env.REACT_PUBLIC_SANITY_TOKEN,
 
 
